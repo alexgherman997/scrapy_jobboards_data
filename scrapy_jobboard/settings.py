@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = "scrapy_jobboard.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+#USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -50,9 +50,12 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    "scrapy_jobboard.middlewares.ScrapyJobboardDownloaderMiddleware": 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   "rotating_proxies.middlewares.RotatingProxyMiddleware": 300,
+   "rotating_proxies.middlewares.BanDetectionMiddleware": 301,
+}
+
+ROTATING_PROXY_LIST_PATH = 'proxies.txt'
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
