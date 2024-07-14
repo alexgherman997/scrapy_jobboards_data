@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Scrapy
+scrapy.cfg
+# Crawl logs
+*.log
+# PIDs
+*.pid
+# Specific files related to Scrapy
+**/requests.seen
+
+
+# Pyre type checker
+.pyre/
+
+# Environments
+.env
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# dotenv
+.env
+.env.*
+
+# virtualenv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# MkDocs documentation
+/site
+
+# Sphinx documentation
+docs/_build/
+
+# Pyre type checker
+.pyre/
+
+# Pylint
+pylint.log
