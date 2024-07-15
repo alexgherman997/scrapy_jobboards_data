@@ -53,3 +53,6 @@ docs/_build/
 
 # Pylint
 pylint.log
+
+#Proxies
+proxies.txt
