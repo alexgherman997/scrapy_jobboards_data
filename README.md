@@ -1,11 +1,10 @@
 # Project status 
-On hold - scraping with Playwright is doing the job atm, scraping maximum 10 pages per job board page 
-if i want to scrape at scale, i will learn scrapy
+Web scraping using Python and Scrapy. More documentation here: https://docs.scrapy.org/en/latest/
 
-# Instalation 
+## Instalation 
 pip3 install scrapy
 
-# Execution 
+## Execution 
 ## Scrape the class name = 'qoutes' and output console
 scrapy crawl quotes 
 
@@ -14,6 +13,3 @@ scrapy crawl quotes -O ex.jsonl
 
 ## Debugging, searching selectors on page
 scrapy shell 'https://quotes.toscrape.com/page/1/'
-
-
-
